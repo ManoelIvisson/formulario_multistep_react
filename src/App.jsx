@@ -2,14 +2,13 @@ import {GrFormPrevious, GrFormNext} from 'react-icons/gr'
 import {FiSend} from 'react-icons/fi'
 import UserForm from './components/UserForm'
 import ReviewForm from './components/ReviewForm'
-import Thanks from './components/UserForm copy'
+import Thanks from './components/Thanks'
 import Steps from './components/Steps'
 
 import './App.css'
 import { useForm } from './hooks/useForm'
 
 function App() {
-
   const formComponents = [<UserForm />, <ReviewForm />, <Thanks />]
 
   const {currentStep, currentComponent, changeStep, isLastStep, isFirstStep} = useForm(formComponents)
